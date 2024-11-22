@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-buttons">
+            <button class="toggle-btn" id="btn-cliente">Cadastro de Cliente</button>
+            <button class="toggle-btn" id="btn-gerente">Cadastro de Gerente</button>
+        </div>
+
+
+
+        <div class="form-box cliente-form" id="cliente-form">
+            <h2>Cadastro de Cliente</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="id-cliente">ID</label>
+                    <input type="text" id="id-cliente" placeholder="Digite o ID do cliente" required>
+                </div>
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite o nome do cliente" required>
+                </div>
+                <div class="input-group">
+                    <label for="cpf-cliente">CPF</label>
+                    <input type="text" id="cpf-cliente" placeholder="Digite o CPF do cliente" required>
+                </div>
+                <div class="input-group">
+                    <label for="email-cliente">E-mail</label>
+                    <input type="email" id="email-cliente" placeholder="Digite o e-mail do cliente" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+
+
+
+        <div class="form-box gerente-form" id="gerente-form" style="display: none;">
+            <h2>Cadastro de Gerente</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="id-gerente">ID</label>
+                    <input type="text" id="id-gerente" placeholder="Digite o ID do gerente" required>
+                </div>
+                <div class="input-group">
+                    <label for="nome-gerente">Nome Completo</label>
+                    <input type="text" id="nome-gerente" placeholder="Digite o nome do gerente" required>
+                </div>
+                <div class="input-group">
+                    <label for="cpf-gerente">CPF</label>
+                    <input type="text" id="cpf-gerente" placeholder="Digite o CPF do gerente" required>
+                </div>
+                <div class="input-group">
+                    <label for="email-cliente">E-mail</label>
+                    <input type="email" id="email-cliente" placeholder="Digite o e-mail do cliente" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Selecionando os botões e as seções dos formulários
+        const btnCliente = document.getElementById('btn-cliente');
+        const btnGerente = document.getElementById('btn-gerente');
+        const formCliente = document.getElementById('cliente-form');
+        const formGerente = document.getElementById('gerente-form');
+
+        // Função para mostrar o formulário de cliente e esconder o de gerente
+        btnCliente.addEventListener('click', () => {
+            formCliente.style.display = 'block';
+            formGerente.style.display = 'none';
+        });
+
+        // Função para mostrar o formulário de gerente e esconder o de cliente
+        btnGerente.addEventListener('click', () => {
+            formCliente.style.display = 'none';
+            formGerente.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

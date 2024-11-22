@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 20%;
+    background-color: #2a2d3e;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px 0 0 8px;
+    overflow-y: auto;
+}
+
+.left-panel h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #e2e2e2;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.product-buttons {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Mais espaço entre os botões */
+}
+
+.product-buttons button {
+    width: 95%; /* Botões mais largos */
+    padding: 15px 20px; /* Maior altura e largura */
+    border: none;
+    color: #fff;
+    background-color: #3a3f51;
+    font-size: 16px; /* Fonte maior */
+    font-weight: 600; /* Texto mais destacado */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-buttons button:hover {
+    background-color: #58627a; /* Cor de destaque no hover */
+    transform: translateY(-5px) scale(1.05); /* Elevação e leve ampliação */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra mais proeminente */
+}
+
+.right-panel {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: calc(100% - 40px);
+    border: none;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.02); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}

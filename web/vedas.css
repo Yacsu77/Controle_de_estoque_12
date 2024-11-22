@@ -1,0 +1,107 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo das tabelas */
+table {
+    width: 95%; /* Amplia a largura das tabelas */
+    max-width: 1000px; /* Ajuste para evitar tabelas muito largas */
+    margin: 30px 0;
+    border-collapse: collapse;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 1.4em; /* Texto maior */
+}
+
+/* Legenda das tabelas */
+table caption {
+    font-size: 2em; /* Legenda maior */
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Cabeçalho das tabelas */
+table th, table td {
+    padding: 20px 25px; /* Maior espaçamento */
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Cabeçalho */
+table th {
+    background-color: #0056b3;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Linhas pares */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Efeito hover nas linhas */
+table tr:hover {
+    background-color: #d9eaff;
+}
+
+/* Estilo do faturamento */
+table tr:first-child td {
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color: #0056b3; /* Cor da tabela */
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Borda arredondada */
+table tr:first-child td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+table tr:first-child td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Botões */
+button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 15px 25px; /* Botões maiores */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #003f7f;
+    transform: scale(1.1);
+}
+
+/* Estilo para mensagens */
+.message {
+    font-size: 1.2em;
+    color: #e63946;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Centralização */
+.container {
+    width: 100%;
+    max-width: 1200px;
+}

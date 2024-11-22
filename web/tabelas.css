@@ -1,0 +1,101 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container da tabela */
+.table-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do título da tabela */
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    background-color: #6c5ce7;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+/* Estilos das células */
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #6c5ce7;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-top: 3px solid #fff;
+}
+
+/* Células de dados */
+td {
+    border-bottom: 1px solid #dddddd;
+    color: #555;
+}
+
+/* Efeito de zebra nas linhas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Efeito hover para as linhas */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links de ação (Excluir, Alterar) */
+a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #6c5ce7;
+    color: #ffffff;
+}
+
+/* Estilo do gif de saudação */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
